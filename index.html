@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ostad Clone</title>
+</head>
+
+<body>
+
+    <!-- Start Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container py-1">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/ostad-logo.png" alt="ostad-logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <form class="bg-light d-flex rounded-4 overflow-hidden border search-width" role="search">
+                            <img src="./assets/ostad-search.svg" class="px-2" alt="search">
+                            <input class="form-control border border-0 bg-light fs-14" type="search"
+                                placeholder="কোর্স সার্চ করুন" aria-label="Search">
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold fs-14" aria-current="page" href="#">কোড মামা</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold fs-14" href="#">ফ্রী কোর্সেস</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold fs-14" href="#">ব্লগ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-semibold fs-14" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ডাউনলোড
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Android</a></li>
+                            <li><a class="dropdown-item" href="#">IOS</a></li>
+                            <li><a class="dropdown-item" href="#">Linux</a></li>
+                            <li><a class="dropdown-item" href="#">Windows</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-light me-3 px-3">সব কোর্স</button>
+                <button class="btn btn-warning px-3">লগইন <i class="bi bi-arrow-right ms-2"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Start Banner Section -->
+    <section id="banner">
+        <div class="container my-5">
+            <div class="card rounded-4 p-4 ostad-width mx-auto banner-bg shadow-sm">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <h2 class="fw-bold">বাংলাদেশ শিখবে <span class="text-danger">লাইভে <img
+                                    src="./assets/Ripple.svg" alt="riple" class="live-icon"> </span></h2>
+                        <p class="fw-semibold">স্কিল শেখার মাধ্যমে বদলে ফেলুন নিজের ভবিষ্যৎ</p>
+                        <button class="btn btn-warning px-5 fw-semibold py-2">শেখা শুরু করুন <i
+                                class="bi bi-arrow-right ms-2 mt-3"></i></button>
+                        <p class="fw-semibold mt-4">৭০০০+ গ্র্যাজুয়েটরা কর্মরত আছেন বিভিন্ন দেশি ও বিদেশি প্রতিষ্ঠানে:
+                        </p>
+                        <div class="row gy-3 ">
+                            <div class="col-3">
+                                <img src="./assets/Brainstation.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-3">
+                                <img src="./assets/TECHNOSOFT-LOGO.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-2">
+                                <img src="./assets/Excel.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-3">
+                                <img src="./assets/Gtr.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-3">
+                                <img src="./assets/ashtha it.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-3">
+                                <img src="./assets/Reve systems.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-2">
+                                <img src="./assets/Sofol it.webp" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-1">
+                                <img src="./assets/core-devs.png" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-2">
+                                <img src="./assets/sayburg.png" class="w-100 brand-logos" alt="logo">
+                            </div>
+                            <div class="col-1">
+                                <img src="./assets/ancor.png" class="w-100 brand-logos" alt="logo">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <img src="./assets/banner.webp" class="w-100 rounded-4 banner-img img-filter" alt="banner-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Section -->
+
+
+    <!-- Start Course Section -->
+    <section id="course">
+        <div class="container">
+            <div class="card rounded-4 px-4 pt-3 mb-5 ostad-width mx-auto bg-white shadow-sm border border-0">
+                <h2 class="fw-bold text-center">আমাদের কোর্সসমুহ <img src="./assets/book-2-icons.svg" alt="book"></h2>
+                <!-- course category  -->
+                <div class="row mt-2 g-2">
+                    <div class="col-lg-3">
+                        <div class="card bg-dark text-white">
+                            <div class="row g-0 py-2">
+                                <div class="col-3 d-flex align-items-center justify-content-center ">
+                                    <div class="bg-white p-1 rounded-circle shadow-sm">
+                                        <img src="./assets/code-box-line.png" alt="code"
+                                            class="course-category-box-icon">
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <a href="ostad.app" class="fs-14 m-0 text-white">Web and App Development</a>
+                                    <p class="m-0">
+                                        <small class="fs-10">• ২৯ কোর্স</small>
+                                        <small class="fs-10">• ৫ ওয়ার্কশপ</small>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card bg-light">
+                            <div class="row g-0 py-2">
+                                <div class="col-3 d-flex align-items-center justify-content-center ">
+                                    <div class="bg-white p-1 rounded-circle shadow-sm">
+                                        <img src="./assets/product-design.png" alt="code"
+                                            class="course-category-box-icon">
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <a href="ostad.app" class="fs-14 m-0 text-dark fw-semibold">Product Management & ..</a>
+                                    <p class="m-0">
+                                        <small class="fs-10">• ২৯ কোর্স</small>
+                                        <small class="fs-10">• ৫ ওয়ার্কশপ</small>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card bg-light">
+                            <div class="row g-0 py-2">
+                                <div class="col-3 d-flex align-items-center justify-content-center ">
+                                    <div class="bg-white p-1 rounded-circle shadow-sm">
+                                        <img src="./assets/business-and-marketing.png" alt="code"
+                                            class="course-category-box-icon">
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <a href="ostad.app" class="fs-14 m-0 text-dark fw-semibold" >Business & Marketing</a>
+                                    <p class="m-0">
+                                        <small class="fs-10">• ২৯ কোর্স</small>
+                                        <small class="fs-10">• ৫ ওয়ার্কশপ</small>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card bg-light">
+                            <div class="row g-0 py-2">
+                                <div class="col-3 d-flex align-items-center justify-content-center ">
+                                    <div class="bg-white p-1 rounded-circle shadow-sm">
+                                        <img src="./assets/data-eng.png" alt="code" class="course-category-box-icon">
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <a class="fs-14 m-0 text-dark fw-semibold" href="ostad.app">Data Engineering</a>
+                                    <p class="m-0">
+                                        <small class="fs-10">• ২৯ কোর্স</small>
+                                        <small class="fs-10">• ৫ ওয়ার্কশপ</small>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Courses -->
+                <div class="row my-4 g-3">
+                    <!-- 1 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/Full Stack Web Development with Python, Django & React.jpg"
+                                alt="Development with Python" class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ২ সিট বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">Full Stack Web Development with Python, Django & React</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/ASP-NET-core-career-track.jpg" alt="ASP.NET Core Career Track"
+                                class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ২</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1">১ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ৮ ঘন্টা বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">ASP.NET Core Career Track</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/wordpress.jpg" alt="Development with Python" class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ৪ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ১৬ দিন বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">WordPress Theme Development</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ৪ -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/shopify-web-thumb.jpg" alt="Development with Python" class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ২ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ১৬ দিন
+                                    বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">Shopify Store Design and Dropshipping</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2 ">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/Flutter.jpg" alt="Development with Python" class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ২ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ১৬ দিন
+                                    বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">App Development with Flutter</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2 ">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/Database for Software Developers.jpg" alt="Development with Python"
+                                class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ২ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ১৬ দিন
+                                    বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">Database for Software Developers</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2 ">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/SQA Manual & Automated Testing.jpg" alt="Development with Python"
+                                class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ২ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ১৬ দিন
+                                    বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">SQA: Manual & Automated Testing</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2 ">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--8 -->
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/PHP Laravel.jpg" alt="Development with Python" class="w-100">
+                            <div class="p-2 bg-light border-top border-bottom">
+                                <button class="btn bg-light-lg fs-10 me-2">ব্যাচ ১</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/team-line.svg" alt="team"
+                                        class="course-icon mb-1"> ২ সিট বাকি</button>
+                                <button class="btn bg-light-lg fs-10"> <img src="./assets/time-line.svg" alt="team"
+                                        class="course-icon mb-1"> ১৬ দিন
+                                    বাকি</button>
+                            </div>
+                            <h4 class="fs-20 p-3 fw-bold">Full Stack Web Development with PHP, Laravel & Vue JS</h4>
+                            <div class="p-3 bg-light border-top border-bottom mt-auto">
+                                <div class="d-grid gap-2 ">
+                                    <button class="btn bg-light-lg fs-14 fw-semibold">বিস্তারিত দেখি <i
+                                            class="bi bi-arrow-right ms-2"></i> </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-grid col-4 mx-auto mt-2">
+                            <button class="btn bg-light-lg fs-14 fw-semibold py-2" type="button">সব দেখুন <i
+                                    class="bi bi-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Course Section -->
+
+    <!-- Start ক্যারিয়ার গোল সেট করুন Section  -->
+    <section id="career">
+        <div class="container mt-5 py-5">
+            <div class="ostad-width mx-auto">
+                <h2 class="text-center fw-bold">ক্যারিয়ার গোল সেট করুন</h2>
+                <p class="text-center fs-14">নিচের অপশন গুলো থেকে আপনার গোল সিলেক্ট করে শেখা শুরু করুন</p>
+                <div class="row g-3">
+
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/code-box-line.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Web & App Development</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/product-design.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Product Management & Design</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/business-and-marketing.png" alt="code"
+                                    class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Business & Marketing</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/creatives.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Creatives</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/data-eng.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Data Engineering</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/Cyber Security.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Cyber Security</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/block-chain.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">Blockchain Development</h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-light card text-center py-3">
+                            <div class="bg-white p-1 rounded-circle shadow-sm course-category-box mx-auto  mb-2">
+                                <img src="./assets/higher-studies.png" alt="code" class="course-category-box-icon">
+                            </div>
+                            <h6 class="fs-16 fw-semibold mb-0">IELTS Preparation
+                            </h6>
+                            <small class="fs-12">• ২৯ কোর্স • ৫ ওয়ার্কশপ</small>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End ক্যারিয়ার গোল সেট করুন Section  -->
+
+    <!-- Start কি কি পাচ্ছেন লাইভ কোর্সে Section -->
+    <section id="course-info">
+        <div class="container my-4">
+            <h2 class="text-center fw-bold">কি কি পাচ্ছেন লাইভ কোর্সে</h2>
+            <p class="text-center fs-14 mb-4">দেখে নিন কি কি পাচ্ছেন ওস্তাদের লাইভ কোর্সে জয়েন করলে</p>
+            <div class="ostad-width mx-auto card p-3">
+
+                <div class="row g-0">
+                    <!-- 1 -->
+                    <div class="col-lg-4">
+                        <div class="text-center p-3 border-end border-bottom h-100">
+
+                            <img src="./assets/icon-1.png" alt="code" class="icon-img">
+
+                            <h6 class="fs-18 fw-bold my-2">ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সেস</h6>
+                            <p>জয়েন করুন গাইডলাইন সমৃদ্ধ ইন্ডাস্ট্রি ফোকাসড লাইভ কোর্সে, শুরু করুন আপনার ক্যারিয়ারের
+                                জার্নি।</p>
+
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-lg-4">
+                        <div class="text-center p-3 border-end border-bottom h-100">
+
+                            <img src="./assets/icon-2.png" alt="code" class="icon-img">
+
+                            <h6 class="fs-18 fw-bold my-2">ইন্টারেকটিভ লাইভ ক্লাস</h6>
+                            <p>ইন্ডাস্ট্রি এক্সপার্টদের সাথে নিয়মিত লাইভ ক্লাস, কনসেপচুয়াল ক্লাস আর সাপোর্ট ক্লাসে স্কিল
+                                ডেভেলপমেন্ট এখন হবে একদম
+                                পরিপুর্ন।</p>
+
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-lg-4">
+                        <div class="text-center p-3 border-bottom h-100">
+
+                            <img src="./assets/icon-3.png" alt="code" class="icon-img">
+
+                            <h6 class="fs-18 fw-bold my-2">মডিউল ভিত্তিক স্টাডি প্ল্যান</h6>
+                            <p>কুইজ, এসাইনমেন্ট আর লাইভ এক্সাম দিয়ে সাজানো মডিউলভিত্তিক গোছানো স্টাডিপ্ল্যানের সাথে
+                                ছিটকে পড়ার কোনো চান্সই নেই।</p>
+
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-lg-4">
+                        <div class="text-center p-3 border-end h-100">
+
+                            <img src="./assets/icon-4.png" alt="code" class="icon-img">
+
+                            <h6 class="fs-18 fw-bold my-2">রিয়েলটাইম প্রোগ্রেস ট্র্যাকিং</h6>
+                            <p>ট্র্যাক করুন আপনার প্রোগ্রেস রিয়েল টাইম, দেখে নিন লিডার বোর্ডে আপনার পজিশন আর কম্পিটিশনে
+                                এগিয়ে যান সবার থেকে।</p>
+
+                        </div>
+                    </div>
+                    <!-- 5-->
+                    <div class="col-lg-4">
+                        <div class="text-center p-3 border-end h-100">
+
+                            <img src="./assets/icon-5.png" alt="code" class="icon-img">
+
+                            <h6 class="fs-18 fw-bold my-2">শিখুন ইন্ডাস্ট্রি এক্সপার্টদের থেকে লাইভে</h6>
+                            <p>স্কিল ডেভেলপ করুন ইন্ডাস্ট্রির সেরা এক্সপার্টদের সাথে, প্রশ্ন করুন আর শিখে নিন সরাসরি,
+                                লাইভে।</p>
+
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col-lg-4">
+                        <div class="text-center p-3 h-100">
+
+                            <img src="./assets/icon-6.png" alt="code" class="icon-img">
+
+                            <h6 class="fs-18 fw-bold my-2">ইন্টেন্সিভ জব প্লেসমেন্ট সাপোর্ট</h6>
+                            <p>কোর্স কমপ্লিটে পাচ্ছেন জব প্লেসমেন্ট টিমের থেকে লাইফটাইম সিভি, প্রোফাইল বিল্ড এবং জব
+                                এপ্লিকেশনসহ ইন্টেন্সিভ জব
+                                প্লেসমেন্ট সাপোর্ট।।</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End কি কি পাচ্ছেন লাইভ কোর্সে Section -->
+
+    <!-- Start Ostad Exclusive Section -->
+    <section id="exclusive">
+        <div class="container my-5 p3-5">
+            <div class="ostad-width mx-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-2">
+                            <div class="p-3">
+                                <h3 class="fw-bold">আপনার কোডিং নলেজ এক্সপ্লোর করুন CodeMama -র সাথে</h3>
+                                <button class="btn btn-dark btn-sm text-uppercase fw-semibold fs-12">
+                                    Check Codemama <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            <img src="./assets/codemama-img.webp" alt="codemama"
+                                class="w-100 exclusive-img bg-light mt-2 rounded-2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-2">
+                            <div class="p-3">
+                                <h3 class="fw-bold">স্কিল টেস্ট করুন Skillable - এ পেয়ে যান ফ্রি সার্টিফিকেট</h3>
+                                <button class="btn btn-dark btn-sm text-uppercase fw-semibold fs-12">
+                                    Check Skillable <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            <img src="./assets/skillable-img.webp" alt="codemama"
+                                class="w-100 exclusive-img bg-light mt-2 rounded-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Ostad Exclusive Section -->
+
+    <!-- Start Ostad for business -->
+    <section id="business" class="bg-white py-5">
+        <div class="container">
+            <div class="ostad-width mx-auto">
+                <div class="card bg-light border border-0 rounded-4 py-4 px-3">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="fw-bold">
+                                Ostad for business
+                            </h2>
+                            <p>জয়েন করুন আমাদের কর্পোরেট স্কিলস ট্রেইনিং প্রোগ্রামে, ট্রেইনিং নিন দেশ সেরা ইন্ডাস্ট্রি
+                                এক্সপার্টদের থেকে আর সাজিয়ে নিন
+                                আপনার টিমকে নতুনভাবে।</p>
+                            <button class="btn btn-warning btn-lg fs-14 fw-semibold px-5 py-2 mt-2">বিস্তারিত দেখি <i
+                                    class="bi bi-chevron-right"></i></button>
+
+                            <h4 class="fw-bold mt-3">Some of our clients</h4>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./assets/sayburg.png" alt="logo" class="w-100 brand-logos">
+                                </div>
+                                <div class="col-2">
+                                    <img src="./assets/core-devs.png" alt="logo" class="w-100 brand-logos">
+                                </div>
+                                <div class="col-2">
+                                    <img src="./assets/Sofol it.webp" alt="logo" class="w-100 brand-logos">
+                                </div>
+                                <div class="col-2">
+                                    <img src="./assets/TECHNOSOFT-LOGO.webp" alt="logo " class="w-100 brand-logos">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="./assets/bg-business.webp" alt="banner" class="w-100 rounded-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Ostad for business -->
+
+    <!-- Start Success info Section -->
+    <section id="seccess-info">
+        <div class="container py-5">
+            <div class="ostad-width mx-auto">
+                <div class="row g-3">
+                    <div class="col-lg-3">
+                        <div class="bg-D1FADF rounded-3 p-4">
+                            <h2 class="fw-bold">৭০০০+</h2>
+                            <p class="m-0">জব প্লেসমেন্ট</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-DAE4FF rounded-3 p-4">
+                            <h2 class="fw-bold">১৫,০০০+</h2>
+                            <p class="m-0">লার্নার</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-FFE8DB rounded-3 p-4">
+                            <h2 class="fw-bold">৯০%</h2>
+                            <p class="m-0">কোর্স কমপ্লিশন রেট</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bg-FFF2CC rounded-3 p-4">
+                            <h2 class="fw-bold">৪৬</h2>
+                            <p class="m-0">লাইভ কোর্স</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Success info Section -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- 1 -->
+                <div class="col-lg-3">
+                    <img src="./assets/ostad-logo.png" alt="logo" class="w-50">
+                    <p class="mt-3 fs-18">অনলাইন লাইভ স্কিল ডেভেলপমেন্ট প্ল্যাটফর্ম।</p>
+
+                    <h6 class="fs-18 fw-bold">ডাউনলোড করুন ওস্তাদ অ্যাপ</h6>
+                    <div class="row gx-5">
+                        <div class="col-3">
+                            <img src="./assets/icon-g-play.svg" alt="icon-g-play" class="bg-dark rounded-2 px-4 py-2">
+                        </div>
+                        <div class="col-3">
+                            <img src="./assets/icon-app-store.svg" alt="icon-g-play"
+                                class="bg-dark rounded-2 px-4 py-2">
+                        </div>
+                        <div class="col-3">
+                            <img src="./assets/con-win-store.svg" alt="icon-g-play" class="bg-dark rounded-2 px-4 py-2">
+                        </div>
+
+                    </div>
+                    <h6 class="fs-16 mt-4">কমিউনিটি -এর সাথে কানেক্টেড থাকতে</h6>
+                    <div class="row gx-5">
+                        <div class="col-2">
+                            <img src="./assets/facebook.svg" alt="icon-g-play"
+                                class="bg-white rounded-2 px-2 py-1 border border-1">
+                        </div>
+                        <div class="col-2">
+                            <img src="./assets/instagram.svg" alt="icon-g-play"
+                                class="bg-white rounded-2 px-2 py-1 border border-1">
+                        </div>
+                        <div class="col-2">
+                            <img src="./assets/youtube.svg" alt="icon-g-play"
+                                class="bg-white rounded-2 px-2 py-1 border border-1">
+                        </div>
+                        <div class="col-2">
+                            <img src="./assets/tiktok.svg" alt="icon-g-play"
+                                class="bg-white rounded-2 px-2 py-1 border border-1">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-3">
+                    <h4 class="fs-20 fw-semibold">কুইক লিংক</h4>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-dark py-2 ">আপকামিং লাইভ ব্যাচ</a>
+                        <a href="#" class="text-dark py-2 ">ফ্রি কোর্সসমূহ</a>
+                        <a href="#" class="text-dark py-2 ">লাইভ ওয়ার্কশপ</a>
+                        <a href="#" class="text-dark py-2 ">ব্লগ</a>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-3">
+                    <h4 class="fs-20 fw-semibold">যোগাযোগ</h4>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-dark py-2 "><i class="bi bi-envelope-check me-2"></i> support@ostad.app</a>
+                        <a href="#" class="text-dark py-2 d-flex">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            <p>Ostad HQ Address
+                                Ka-6/a, Navana Sylvania, Baridhara Road, Nadda, Gulshan-2, Dhaka-1212</p>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-3">
+                    <h4 class="fs-20 fw-semibold">কোম্পানি</h4>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-dark py-2 ">আমাদের সম্পর্কে</a>
+                        <a href="#" class="text-dark py-2 ">রিফান্ড পলিসি</a>
+                        <a href="#" class="text-dark py-2 ">প্রাইভেসী পলিসি</a>
+                        <a href="#" class="text-dark py-2 ">টার্মস এবং শর্তাবলী</a>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/supported-payments.webp" alt="payment" class="w-100 mt-3">
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

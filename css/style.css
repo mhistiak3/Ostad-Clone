@@ -1,0 +1,101 @@
+* {
+  font-family: "Hind Siliguri", sans-serif;
+}
+body {
+  background-color: #f9f9fa;
+  overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer !important;
+}
+a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+}
+.logo {
+  width: 100px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.search-width {
+  width: 180px;
+}
+.ostad-width {
+  max-width: 1150px;
+}
+.bg-light-lg {
+  background-color: #eaecf0;
+}
+
+.bg-D1FADF {
+  background-color: #d1fadf;
+}
+.bg-DAE4FF {
+  background-color: #DAE4FF;
+}
+.bg-FFE8DB {
+  background-color: #FFE8DB;
+}
+.bg-FFF2CC {
+  background-color: #FFF2CC;
+}
+.banner-bg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    60deg,
+    rgba(229, 243, 237, 1) 0%,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(229, 243, 237, 1) 100%
+  );
+}
+.banner-img {
+  height: 300px;
+  object-fit: cover;
+}
+.img-filter {
+  filter: grayscale(13%) sepia(6%) brightness(88%) hue-rotate(3deg) opacity(99%);
+}
+.brand-logos {
+  filter: grayscale(100%);
+}
+.course-category-box {
+  width: 32px;
+}
+.course-category-box-icon {
+  width: 22px;
+}
+.course-icon {
+  width: 12px;
+}
+.live-icon {
+  width: 40px;
+}
+.icon-img {
+  width: 50px;
+}
+.exclusive-img {
+  height: 250px;
+  object-fit: cover;
+}
+footer{
+    background-color: #FFFBEE;
+}
