@@ -1,1 +1,1 @@
-# Ostad Website Clone for practice 
+# Ostad Website Clone for practice and assignment
